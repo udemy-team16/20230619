@@ -1,0 +1,27 @@
+button {
+    cursor: pointer;
+}
+
+.input-button {
+    margin-bottom: 10px;
+}
+
+.workList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.workList .box {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    border: 1px solid #33333359;
+    padding: 10px;
+}
+
+.workList .box .delete-btn {
+    background-color: #ff5723;
+    color: #fff;
+    border: none;
+}

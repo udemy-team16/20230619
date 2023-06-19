@@ -1,0 +1,23 @@
+* {margin: 0; padding: 0; text-decoration: none; list-style: none;}
+
+#box_wrap {
+  display: flex;
+}
+.wrap {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border: 1px solid #000;
+  margin:20px 0 0 20px;
+}
+.fruit, .price {
+  margin-bottom: 20px;
+}
+.btn{
+  width:150px;
+  padding: 20px;
+}
+li{
+  margin-left: 50px;
+}

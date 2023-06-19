@@ -1,0 +1,48 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+#wrap {
+  padding:30px;
+}
+#wrap input {
+  margin-right: 10px;
+  width: 200px;
+  height: 25px;
+}
+#wrap button{
+  width: 50px;
+  height: 25px;
+  background-color: rgb(32, 145, 107);
+  border: none;
+  color: #fff;
+}
+#List{
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:20px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  padding:30px;
+}
+.item {
+  width: 400px;
+  padding:30px;
+}
+.removeBtn{
+  width: 50px;
+  height: 25px;
+  background-color: rgb(211, 126, 36);
+  border: none;
+  color: #fff;
+}
+#ListWrap{
+  display: flex;
+  flex-direction: column;
+}

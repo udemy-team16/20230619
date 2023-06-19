@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/static/css/shin/3.css">
+</head>
+<body>
+    <div id="sads">
+        <input type="text" id="user-name"  placeholder="이름">
+        <input type="text" id="user-text"  placeholder="메시지 입력">
+        <button id="send">전송</button>
+        <ul id="get_message"></ul>
+    </div>
+    <script>
+        let send = document.getElementById("send")
+        let name = document.getElementById("user-name")
+        let text = document.getElementById("user-text")
+
+        window.addEventListener('storage', (event) => {
+        let message = document.getElementById("get_message")
+        let list = document.createElement("li")
+        list.innerHTML = `
+         ${event.key} : ${event.newValue}
+        `;
+        message.appendChild(list);
+    });
+
+    send.addEventListener("click",(event)=>{
+        let message = document.getElementById("get_message")
+        let list = document.createElement("li")
+        localStorage.setItem("name",name.value)
+        localStorage.setItem("text",text.value)
+        list.innerHTML = `${localStorage.getItem("name")} : ${localStorage.getItem("text")}`
+        message.appendChild(list);
+        name.value = ""
+        text.value = ""
+    })
+
+    document.getElementById("sads").addEventListener("keyup",(e)=>{
+        if(e.keyCode===13){
+            send.click();
+            name.value = ""
+            text.value = ""
+        }
+    })
+    
+    </script>
+    
+    <!-- <script type="text/javascript" src="/static/js/shin/3.js"></script> -->
+</body>
+</html>

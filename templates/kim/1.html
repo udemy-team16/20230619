@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/static/css/kim/1.css">
+
+</head>
+<body>
+    <div id="box_wrap">
+        <div class="wrap">
+            <strong class="fruit" >사과</strong>
+            <div class="price" >1000원</div>
+            <button class="btn" onclick="add(this.parentNode)">장바구니에 추가</button>
+        </div>
+        <div class="wrap">
+            <strong class="fruit">바나나</strong>
+            <div class="price">1500원</div>
+            <button class="btn" onclick="add(this.parentNode)">장바구니에 추가</button>
+        </div>
+    </div>
+    <strong style="margin: 30px 0 50px 30px; display:inline-block" >장바구니</strong>
+    <ul id="list">
+
+    </ul>
+    <script type="text/javascript" src="/static/js/kim/1.js"></script>
+</body>
+</html>

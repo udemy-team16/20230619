@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/static/css/shin/1.css">
+</head>
+<body>
+    <div id="container" style="display: flex">
+        <div
+          id="frist"
+          style="
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+          "
+        >
+          <p>사과<br>1000원</p>
+          <button
+            onclick="moveCart(this.parentNode)"
+            type="button"
+            style="background-color: green; color: white"
+          >
+            장바구니 추가
+          </button>
+        </div>
+        <div
+          id="second"
+          style="
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+          "
+        >
+          <p>배<br>1000원</p>
+          <button
+            onclick="moveCart(this.parentNode)"
+            type="button"
+            style="background-color: green; color: white"
+          >
+            장바구니 추가
+          </button>
+        </div>
+      </div>
+      <div id="cart">
+        <h1>장바구니</h1>
+      </div>
+    <script type="text/javascript" src="/static/js/shin/1.js"></script>
+</body>
+</html>

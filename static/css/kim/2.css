@@ -1,0 +1,14 @@
+* {margin: 0; padding: 0; text-decoration: none; list-style: none;}
+
+.box_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin:30px 0 0 30px;
+}
+.box {
+  width:100%;
+  padding:30px;
+  margin-bottom:10px;
+  border: 1px solid #000;
+}

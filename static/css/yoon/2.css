@@ -1,0 +1,13 @@
+.box-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+    width: 50%;
+}
