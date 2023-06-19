@@ -4,6 +4,12 @@ const btn = document.getElementById('addBtn');
 
 btn.addEventListener('click', function () {
     const text = document.getElementById('inputBox').value;
+    const ListWrap = document.getElementById('ListWrap');
+
+    const List = document.createElement('div');
+    List.id = 'List'
+
+    ListWrap.appendChild(List);
 
     const ListItem = document.createElement('div');
     ListItem.className = 'item';
@@ -13,7 +19,15 @@ btn.addEventListener('click', function () {
     removeBtn.className = 'removeBtn';
     removeBtn.innerText = '삭제';
 
-    const List = document.getElementById('List');
+
     List.appendChild(ListItem);
     List.appendChild(removeBtn);
+
+    removeBtn.addEventListener('click', function () {
+        const List = this.parentNode;
+        List.remove();
+    });
 });
+
+
+
